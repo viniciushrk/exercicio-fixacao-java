@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb8bddc-5e48-47a4-be23-3d8f32a6ee07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atividadefixacao.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atividade-fixacao/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/InitialProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/interfaces/IThreadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/models/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/models/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/models/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InitialProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/IThreadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Admin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Usuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/InitialProject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/atividadefixacao.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +39,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -36,26 +57,148 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_directory_selection": "C:/Users/viniciushrk/Documents/exercicio-fixacao-java/atividade-fixacao/src/test/java",
+    "last_opened_file_path": "C:/Users/viniciushrk/Documents/exercicio-fixacao-java/atividade-fixacao",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Shell Script"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="InitialProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="InitialProject" />
-      <module name="atividadefixacao" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.UsuarioTest.foo">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="atividade-fixacao" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/atividade-fixacao/src/test/java/models" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsuarioTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="atividade-fixacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.UsuarioTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioTest.foo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="atividade-fixacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.UsuarioTest" />
+      <option name="METHOD_NAME" value="foo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioTest.testAnUserShouldBeDeleteThread" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="atividade-fixacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.UsuarioTest" />
+      <option name="METHOD_NAME" value="testAnUserShouldBeDeleteThread" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsuarioTest.testAnUserShouldBeUpdateThread" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="atividade-fixacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.UsuarioTest" />
+      <option name="METHOD_NAME" value="testAnUserShouldBeUpdateThread" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="models" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="atividade-fixacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="TestNG.UsuarioTest.foo" />
+      <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeDeleteThread" />
+      <item itemvalue="TestNG.UsuarioTest" />
+      <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeUpdateThread" />
+      <item itemvalue="TestNG.models" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InitialProject" />
+        <item itemvalue="TestNG.UsuarioTest.foo" />
+        <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeDeleteThread" />
+        <item itemvalue="TestNG.models" />
+        <item itemvalue="TestNG.UsuarioTest" />
+        <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeUpdateThread" />
       </list>
     </recent_temporary>
   </component>
@@ -80,5 +223,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/atividade-fixacao/src/main/java/InitialProject.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/exercicio_fixacao_java$InitialProject.ic" NAME="InitialProject Coverage Results" MODIFIED="1669207604083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
