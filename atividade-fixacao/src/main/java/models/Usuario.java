@@ -1,10 +1,10 @@
 package models;
 
-import interfaces.IThreadService;
+import interfaces.IUsuario;
 
 import java.util.UUID;
 
-public abstract class Usuario implements IThreadService {
+public abstract class Usuario implements IUsuario {
     protected UUID id;
     protected String nomeUsr;
     protected String nome;

@@ -46,7 +46,7 @@ public class ThreadService {
         var getThread = ThreadService.getById(threadId);
         ThreadFakeDb.threadList.remove(getThread);
 
-        if(getThread.userId != userId) {
+        if(getThread.getUserId() != userId) {
             System.out.println("Thread not update, because user does not is responsibility.");
             return;
         }
@@ -60,7 +60,7 @@ public class ThreadService {
     public static void delete(UUID threadId,  UUID userId) {
         var getThread = getById(threadId);
 
-        if (getThread.userId != userId) {
+        if (getThread.getUserId() != userId) {
             System.out.println("Thread not delete, because user does not is responsibility.");
             return;
         }
@@ -75,7 +75,7 @@ public class ThreadService {
 
         int index = 0;
         for (Thread thread: ThreadFakeDb.threadList) {
-            if (threadId == thread.id) {
+            if (threadId == thread.getId()) {
                 threadSeach = ThreadFakeDb.threadList.get(index);
             }
             index++;
@@ -87,7 +87,7 @@ public class ThreadService {
     public static List<Thread> getByUserId(UUID userId) {
         List<Thread> threadsByUser = new ArrayList<Thread>();
         for (Thread thread: ThreadFakeDb.threadList) {
-            if (userId == thread.userId) {
+            if (userId == thread.getUserId()) {
                 threadsByUser.add(thread);
             }
         }
@@ -97,7 +97,7 @@ public class ThreadService {
     public static List<Thread> getAnswers(UUID threadId) {
         List<Thread> threadsAnswers = new ArrayList<Thread>();
         for (Thread thread: ThreadFakeDb.threadList) {
-            if (threadId == thread.threadIdPrincipal) {
+            if (threadId == thread.getThreadIdPrincipal()) {
                 threadsAnswers.add(thread);
             }
         }

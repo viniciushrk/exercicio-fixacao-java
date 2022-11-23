@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.UUID;
 
 public class Thread {
-    public UUID id;
-    public String conteudo;
-    public UUID userId;
-    public UUID threadIdPrincipal;
-    public List<Thread> respostas = new ArrayList<Thread>();
+    private UUID id;
+    private String conteudo;
+    private UUID userId;
+    private UUID threadIdPrincipal;
+    private List<Thread> respostas = new ArrayList<Thread>();
 
     public Thread(String conteudo, UUID userId) {
         this.id = UUID.randomUUID();

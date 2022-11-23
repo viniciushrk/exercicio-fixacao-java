@@ -31,12 +31,13 @@ public class Cliente extends Usuario
         ThreadService.delete(threadId, this.id);
     }
 
-    public UUID VerificarCriacao(UUID threadId) {
+    public UUID ValidaCriador(UUID threadId) {
         var thread = ThreadService.getById(threadId);
 
         if (thread == null) {
             return null;
         }
-        return thread.userId;
+
+        return thread.getUserId();
     }
 }

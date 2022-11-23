@@ -29,8 +29,8 @@ public class UsuarioTest
         var result = this.admin.CriarThread(conteudo);
 
         assertNotNull(result);
-        assertEquals(conteudo, result.conteudo);
-        assertEquals(this.admin.id, result.userId);
+        assertEquals(conteudo, result.getConteudo());
+        assertEquals(this.admin.id, result.getUserId());
     }
 
     @Test
@@ -40,11 +40,11 @@ public class UsuarioTest
         var threadCreated = this.admin.CriarThread(conteudo);
 
         String otherConteudo = "Edit teste ";
-        this.admin.EditarThread(threadCreated.id, otherConteudo);
+        this.admin.EditarThread(threadCreated.getId(), otherConteudo);
 
-        var threadResult =  ThreadService.getById(threadCreated.id);
+        var threadResult =  ThreadService.getById(threadCreated.getId());
 
-        assertNotEquals(conteudo, threadResult.conteudo);
+        assertNotEquals(conteudo, threadResult.getConteudo());
     }
 
     @Test
@@ -53,12 +53,12 @@ public class UsuarioTest
         String conteudo = "Create teste";
         var threadCreated = this.admin.CriarThread(conteudo);
 
-        this.cliente.ResponderThread(threadCreated.id, "Resposta Cliente");
-        this.cliente.ResponderThread(threadCreated.id, "Resposta Cliente");
+        this.cliente.ResponderThread(threadCreated.getId(), "Resposta Cliente");
+        this.cliente.ResponderThread(threadCreated.getId(), "Resposta Cliente");
 
-        var threadResult =  ThreadService.getById(threadCreated.id);
+        var threadResult =  ThreadService.getById(threadCreated.getId());
 
-        assertEquals(2, threadResult.respostas.size());
+        assertEquals(2, threadResult.getRespostas().size());
     }
 
     @Test
@@ -67,9 +67,9 @@ public class UsuarioTest
         String conteudo = "Create teste";
         var thread = this.admin.CriarThread(conteudo);
 
-        this.admin.ExcluirThread(thread.id);
+        this.admin.ExcluirThread(thread.getId());
 
-        var threadResult =  ThreadService.getById(thread.id);
+        var threadResult =  ThreadService.getById(thread.getId());
 
         assertNull(threadResult);
     }
