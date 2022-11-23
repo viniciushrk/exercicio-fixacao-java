@@ -2,31 +2,45 @@ package models;
 
 import Services.ThreadService;
 import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class UsuarioTest
 {
+    protected Usuario admin;
+    protected Usuario cliente;
+
+    @BeforeMethod
+    public void setUp() {
+        System.out.println("setup");
+        this.admin = new Admin("AdminTeste", "admin@gmail.com");
+        this.cliente = new Cliente("AdminTeste", "admin@gmail.com");
+    }
+
     @Test
     void testAnUserShouldBeCreateThread()
     {
         String conteudo = "Create teste";
-        var user = new Admin("AdminTeste", "admin@gmail.com");
-        var result = user.CriarThread(conteudo);
+
+        var result = this.admin.CriarThread(conteudo);
 
         assertNotNull(result);
         assertEquals(conteudo, result.conteudo);
-        assertEquals(user.id, result.userId);
+        assertEquals(this.admin.id, result.userId);
     }
 
     @Test
     void testAnUserShouldBeUpdateThread()
     {
         String conteudo = "Create teste";
-        var user = new Admin("AdminTeste", "admin@gmail.com");
-        var threadCreated = user.CriarThread(conteudo);
+        var threadCreated = this.admin.CriarThread(conteudo);
 
         String otherConteudo = "Edit teste ";
-        user.EditarThread(threadCreated.id, otherConteudo);
+        this.admin.EditarThread(threadCreated.id, otherConteudo);
 
         var threadResult =  ThreadService.getById(threadCreated.id);
 
@@ -37,12 +51,10 @@ public class UsuarioTest
     void testAnUserShouldBeResponseAThread()
     {
         String conteudo = "Create teste";
-        var user = new Admin("AdminTeste", "admin@gmail.com");
-        var userClient = new Cliente("Cliente", "Cliente@gmail.com");
-        var threadCreated = user.CriarThread(conteudo);
+        var threadCreated = this.admin.CriarThread(conteudo);
 
-        userClient.ResponderThread(threadCreated.id, "Resposta Cliente");
-        userClient.ResponderThread(threadCreated.id, "Resposta Cliente");
+        this.cliente.ResponderThread(threadCreated.id, "Resposta Cliente");
+        this.cliente.ResponderThread(threadCreated.id, "Resposta Cliente");
 
         var threadResult =  ThreadService.getById(threadCreated.id);
 
@@ -53,21 +65,13 @@ public class UsuarioTest
     void testAnUserShouldBeDeleteThread()
     {
         String conteudo = "Create teste";
-        var user = new Admin("AdminTeste", "admin@gmail.com");
-        var thread = user.CriarThread(conteudo);
+        var thread = this.admin.CriarThread(conteudo);
 
-        user.ExcluirThread(thread.id);
+        this.admin.ExcluirThread(thread.id);
 
         var threadResult =  ThreadService.getById(thread.id);
 
         assertNull(threadResult);
     }
-
-    @Test
-    void foo()
-    {
-        Usuario user = new Admin("AdminTeste", "admin@gmail.com");
-
-        System.out.println(Admin.class.getName());
-    }
 }
+

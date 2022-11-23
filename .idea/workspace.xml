@@ -4,30 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bb8bddc-5e48-47a4-be23-3d8f32a6ee07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atividade-fixacao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/InitialProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/interfaces/IThreadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/models/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/models/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atividade-fixacao/src/main/java/models/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0bb8bddc-5e48-47a4-be23-3d8f32a6ee07" name="Changes" comment="feat: implements thread">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InitialProject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/interfaces/IThreadService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Usuario.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/InitialProject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atividadefixacao/atividadefixacao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/atividade-fixacao/src/test/java/models/UsuarioTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/atividade-fixacao/src/test/java/models/UsuarioTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,12 +66,36 @@
       <recent name="models" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.UsuarioTest.foo">
+  <component name="RunManager" selected="TestNG.UsuarioTest">
+    <configuration name="InitialProject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="InitialProject" />
+      <module name="atividade-fixacao" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="atividade-fixacao" />
       <option name="MAIN_CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/atividade-fixacao/src/test/java/models" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="models in atividade-fixacao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="atividade-fixacao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <dir value="$PROJECT_DIR$/atividade-fixacao/src/test/java/models" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,24 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioTest.testAnUserShouldBeDeleteThread" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="atividade-fixacao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.UsuarioTest" />
-      <option name="METHOD_NAME" value="testAnUserShouldBeDeleteThread" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UsuarioTest.testAnUserShouldBeUpdateThread" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="atividade-fixacao" />
       <extension name="coverage">
@@ -169,36 +154,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="models" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="atividade-fixacao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="Application.InitialProject" />
+      <item itemvalue="JUnit.models in atividade-fixacao" />
       <item itemvalue="TestNG.UsuarioTest.foo" />
-      <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeDeleteThread" />
       <item itemvalue="TestNG.UsuarioTest" />
       <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeUpdateThread" />
-      <item itemvalue="TestNG.models" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UsuarioTest.foo" />
-        <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeDeleteThread" />
-        <item itemvalue="TestNG.models" />
         <item itemvalue="TestNG.UsuarioTest" />
+        <item itemvalue="JUnit.models in atividade-fixacao" />
         <item itemvalue="TestNG.UsuarioTest.testAnUserShouldBeUpdateThread" />
+        <item itemvalue="Application.InitialProject" />
+        <item itemvalue="TestNG.UsuarioTest.foo" />
       </list>
     </recent_temporary>
   </component>
@@ -211,6 +180,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668623693570</updated>
     </task>
+    <task id="LOCAL-00001" summary="feat: implements thread">
+      <created>1669212789726</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669212789726</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,6 +200,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: implements thread" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implements thread" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
